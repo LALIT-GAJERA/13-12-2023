@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text">
+    </form>    
+    <button onclick="addvalu()">click to add value</button>
+    <ul>
+        <li>List 1</li>
+    </ul>
+
+    
+    <script>
+        function addvalu(){
+            let list =  document.createElement("li");
+            let a= document.querySelector("Input").value;
+            let listtext = document.createTextNode(a);
+            list.appendChild(listtext);
+            document.querySelector("ul").append(list);
+        }
+    </script>
+</body>
+</html>

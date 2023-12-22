@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="" id="userval">
+         
+        <button onclick="addvalue()",> Cleak Here to Add</button>
+        <ul>
+        </ul>
+    </div>
+    <label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+  <option value=""></option>
+</select>
+   
+    <script>
+        function addvalue(){
+            let list = document.getElementById("userval").value;
+            let addlist = document.createElement("li");
+            let listtext = document.createTextNode(list);
+            addlist.appendChild(listtext);
+            document.querySelector("ul").append(addlist);
+            document.getElementById("userval").value="";
+          
+            let list1 = document.getElementById("userval").value;
+            let addlist1 = document.createElement("option");
+            let listtext1 = document.createTextNode(list1);
+            addlist1.appendChild(listtext1);
+            document.querySelector("select").append(addlist1);
+            // document.getElementById("cars").value="";
+        
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"> cleak here</button>
+    <button class="bt" onclick="val()"> 
+        click here for value
+    </button>
+    <p id="p1"></p>
+
+    <script>
+        let btn1 = document.getElementById("btn");
+        btn1.addEventListener("Click",()=>{
+            alert("hello");
+        })
+
+        let val = ()=>{
+            // val = "hello";
+            console.log("hello user")
+            let val1 = document.getElementById("p1").innerText="i Love you";
+            // val1.value="hello";
+            // val1.innerHTML("value");
+
+        }
+    </script>
+</body>
+</html>
